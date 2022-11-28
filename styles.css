@@ -1,0 +1,65 @@
+@import "sidenav.css";
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-height: 100vh;
+    margin: auto;
+    max-width: 600px;
+}
+
+.center-fit-small {
+    max-height: 100vh;
+    margin: auto;
+    max-width: 100px;
+}
+
+.left-fit-small {
+    max-height: 100vh;
+    margin: auto;
+    max-width: 100px;
+    left: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.container-left {
+    display: flex;
+    justify-content: left
+}
+
+.banner {
+    background-image: linear-gradient(180deg, rgb(61, 66, 140) 30%, rgb(212, 203, 28) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    border-radius: 25px;
+}
+
+body {
+    /* background-color: aqua;  */
+    font-size: x-large;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 1px solid #666;
+    width: 100%;
+}
+
+.table th {
+    border: solid 1px #666;
+    word-wrap: break-word;
+}
+
+.table td {
+    border: solid 1px #666;
+    word-wrap: break-word;
+}
