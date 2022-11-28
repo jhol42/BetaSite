@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+
+        .center-fit {
+            max-height: 100vh;
+            margin: auto;
+            max-width: 600px;
+        }
+
+        .center-fit-small {
+            max-height: 100vh;
+            margin: auto;
+            max-width: 100px;
+        }
+
+        .left-fit-small {
+            max-height: 100vh;
+            margin: auto;
+            max-width: 100px;
+            left: auto;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .container-left {
+            display: flex;
+            justify-content: left
+        }
+
+        .banner {
+            background-image: linear-gradient(180deg, rgb(61, 66, 140) 30%, rgb(212, 203, 28) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0%;
+        }
+
+        body {
+            /* background-color: aqua;  */
+            font-size: x-large;
+        }
+
+        .table {
+            border-collapse: collapse;
+            border: 1px solid #666;
+            width: 100%;
+        }
+
+        .table th {
+            border: solid 1px #666;
+            word-wrap: break-word;
+        }
+
+        .table td {
+            border: solid 1px #666;
+            word-wrap: break-word;
+        }
+
+        /* The sidebar menu */
+        .sidenav {
+            height: 100%;
+            /* Full-height: remove this if you want "auto" height */
+            width: 160px;
+            /* Set the width of the sidebar */
+            position: fixed;
+            /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-image: linear-gradient(180deg, rgb(61, 66, 140) 30%, rgb(212, 203, 28) 100%);
+            /* Black */
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 20px;
+            margin: 0%;
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Style page content */
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidebar */
+            padding: 0px 10px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+    <title>Team 60, The Bionic Bulldogs</title>
+</head>
+
+<body>
+    <div class="sidenav">
+        <a href="#home">Top</a>
+        <a href="#history">History</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#buildingfunds">Building Funds</a>
+        <a href="#links">Links</a>
+        <a href="#resources">FRC Resources</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+<div class="main">
+    <section id="home">
+        <div class="banner">
+            <div class="imgbox">
+                <img class="left-fit-small" src="data/USAFLag.webp" />
+            </div>
+            <div class="imgbox">
+                <img class="center-fit-small" style="margin-left:5%;scale: 88%;" src="data/arizona-state-flag.webp" />
+            </div>
+            <div style="margin-left: 10%;margin-right: 10%">
+                <h1>Team 60 Bionic Bulldogs</br>Kingman, AZ</h1>
+            </div>
+            <div class="imgbox">
+                <img class="center-fit-small" src="data/bionic bulldog draft.webp" style="margin: 10%" />
+            </div>
+        </div>
+    </section>
+    <section id="history">
+        <h1>History</h1>
+
+        <p>
+            Team 60 was founded at Kingman High School in 1996 by an engineer at Laron Inc.
+            Team 60's first season in "First Robotics Competition" (FRC) was 1997 competing in the "Toroid Terror"
+            challenge.
+        </p>
+        <p>
+            Eventually, the team expanded to include Kingman Academy of Learning High School,
+            in addition to Kingman High School. As Kingman grew, the team also welcomed students
+            from Lee Williams High School as well as homeschool students. Now the team also includes
+            students in 7th grade and up.
+        </p>
+        <p>
+            Recently in 2022, Team 60 celebrated their 25th season competing in the FRC competition.
+        </p>
+        <div class="imgbox">
+            <a href="https://frc-events.firstinspires.org/team/60">Visit Team 60 events.</a>
+        </div>
+        <img class="center-fit" src="data/robot60.webp" />
+        </p>
+
+    </section>
+
+    <section id="sponsors">
+        <h1>Sponsors</h1>
+        <!-- To update the table update the Sponsors2.json file then run UpdateSponsorTable.ps1 -->
+        <!-- !!!!!!don't manually edit this table.!!!!!!!!!-->
+        <table class="table">
+            <!-- begin sponsors -->
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">American Woodmark</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Barkhurst Electric</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Brackett Aircraft</div>
+                </td>
+                <td><a href="http://www.brackettaircraft.com/">http://www.brackettaircraft.com/</a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Brackett Airfilters</div>
+                </td>
+                <td><a href="https://www.brackettaerofilters.com/">https://www.brackettaerofilters.com/</a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">CallCenters USA</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Drinking Age Motors</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Fiat Chrysler Automobiles Foundation</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Freiday Construction</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">I-Corp AZ</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Kingman Academy of Learning</div>
+                </td>
+                <td><a href="https://www.kaolaz.org/">https://www.kaolaz.org/</a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Kingman and Mohave Manufacturing Association</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Kingman Area Chamber of Commerce</div>
+                </td>
+                <td><a href="https://kingmanchamber.com/">https://kingmanchamber.com/</a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Kingman Rotary International</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Kingman Unified School District</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Laron Engineering Inc</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Leggett Engineering Inc.</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Linde</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Mohave County School Superintendent</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Northrop Grumman</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Purvis Industries</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Soroptimist International of Kingman</div>
+                </td>
+                <td><a href="https://sikingman.clubexpress.com/">https://sikingman.clubexpress.com/</a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Suddenlink</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Sysco</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">TrueValue</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">UniSource Energy Services</div>
+                </td>
+                <td><a href="https://www.uesaz.com/">https://www.uesaz.com/</a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Vito's Italian Cuisine</div>
+                </td>
+                <td><a href=""></a></td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">West Coast Netting</div>
+                </td>
+                <td><a href="https://westcoastnetting.com/">https://westcoastnetting.com/</a></td>
+                <td>2020, 2021</td>
+            </tr>
+            <!-- end sponsors -->
+        </table>
+    </section>
+
+    <section id="buildingfunds">
+        <h1>Building Funds</h1>
+        <p>
+            Team 60 has started a project to build a community robotics center on
+            Kingman High School's campus. This building will provide a space for our team to work on, machine,
+            program, and test robots. It will also provide a space that other community robotics programs can use.
+            Currently the project has been started, but we are still raising additional funding.
+        </p>
+        <p>
+            Please consider supporting us! Donations can be made on our
+            <a href="https://gofund.me/2251b126">GoFundMe</a>, directly made to our account
+            at <a href="https://www.foothillsbank.com/">Foothills bank</a>, or sent to Kingman Robotics at
+            PO Box 6492 Kingman, AZ 86402.
+            For more information, please contact us at
+            <a href="mailto:firstteam60robotics@gmail.com">firstteam60robotics@gmail.com</a>
+        </p>
+        <a href="https://www.youtube.com/watch?v=4y8VWqxNbow">Help us find a home.</a>
+    </section>
+
+    <section id="links">
+        <h1>Additonal Information</h1>
+        <!-- To update the table update the Sponsors2.json file then run UpdateSponsorTable.ps1 -->
+        <!-- !!!!!!don't manually edit this table.!!!!!!!!!-->
+        <table class="table">
+            <!-- begin links -->
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Facebook</div>
+                </td>
+                <td><a
+                        href="https://www.facebook.com/Robotics-Team-60-148717768487997/">https://www.facebook.com/Robotics-Team-60-148717768487997/</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">The Blue Alliance</div>
+                </td>
+                <td><a href="https://www.thebluealliance.com/">https://www.thebluealliance.com/</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">Github</div>
+                </td>
+                <td><a href="https://github.com/frcteam60">https://github.com/frcteam60</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">FIRST</div>
+                </td>
+                <td><a href="https://www.firstinspires.org/">https://www.firstinspires.org/</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="word-wrap: break-word;">GoFundMe</div>
+                </td>
+                <td><a href="https://gofund.me/2251b126">https://gofund.me/2251b126</a></td>
+            </tr>
+            <!-- end links -->
+        </table>
+    </section>
+
+    <section id="resources">
+        <h1>FRC Resources</h1>
+        <table>
+            <tr>
+                <td><a href="https://www.ni.com/docs/en-US/bundle/roborio-20-umanual/page/umanual.html">RoboRio 2.0
+                        Reference</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.wpilib.org/en/stable/docs/software/what-is-wpilib.html">What is WPILib</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/wpilibsuite/allwpilib">WPILib GitHub</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/wpilibsuite/allwpilib/releases/tag/v2022.4.1">WPILib C++/Java Installer
+                        (Scroll to bottom)</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/introduction.html">Zero to Robot</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.wpilib.org/allwpilib/docs/release/cpp/index.html">C++ Reference</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://github.wpilib.org/allwpilib/docs/release/java/index.html">Java Reference</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html">Install
+                        WPILib</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Interested in contacting us? Please feel free to send us an email!</p>
+        <p>
+            Are you a local business or organization? We do robotics demonstrations and presentation.
+            Please feel free to reach out!
+        </p>
+        <p>
+            Please consider supporting us so we can continue to provide this
+            program to students in our community!
+            Sponsors are added to our sponsors page, our sponsors banner, and the side of the robot.
+        </p>
+
+        <div style="display:inline-block;vertical-align:text-bottom;margin-bottom: 5%;">
+            <div style="display:grid"></div>
+            <a href="mailto:firstteam60robotics@gmail.com">firstteam60robotics@gmail.com</a><br />
+            <strong>P.O. Box 6492 <br />Kingman, AZ 86402</strong>
+        </div>
+        <img src="data/bionic bulldog draft.webp" style='height: 10%; width: 10%; object-fit: scale-down' />
+        </div>
+    </section>
+</div>
+</body>
+
+</html>
